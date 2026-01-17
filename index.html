@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sidharth Mitra | Full Stack Web Developer</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- CSS (FIXED PATH) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -18,77 +18,73 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#features">Why Me</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ================= MAIN ================= -->
- <section id="hero">
-  <div class="hero-wrapper">
+  <main>
 
-    <!-- LEFT: CONTENT -->
-    <div class="hero-content">
+    <!-- ================= HERO ================= -->
+    <section id="hero">
+      <div class="hero-wrapper">
 
-      <span class="hero-badge">
-        ⚡ Full Stack Web Developer
-      </span>
+        <div class="hero-content">
+          <span class="hero-badge">⚡ Full Stack Web Developer</span>
 
-      <h1>
-        Hi, I am <span>Sidharth Mitra</span><br>
-        I Build <span>Scalable Web Applications</span>
-      </h1>
+          <h1>
+            Hi, I am <span>Sidharth Mitra</span><br>
+            I Build <span>Scalable Web Applications</span>
+          </h1>
 
-      <p>
-        Full Stack Web Developer experienced in designing modern frontends,
-        building secure backend APIs, and managing relational databases.
-        I turn ideas into production-ready applications.
-      </p>
+          <p>
+            Full Stack Web Developer experienced in designing modern frontends,
+            building secure backend APIs, and managing relational databases.
+            I turn ideas into production-ready applications.
+          </p>
 
-      <div class="hero-actions">
-        <a href="#skills" class="cta-button">View My Skills</a>
-        <a href="#contact" class="secondary-btn">Contact Me</a>
+          <div class="hero-actions">
+            <a href="#skills" class="cta-button">View My Skills</a>
+            <a href="#contact" class="secondary-btn">Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <h3>10+</h3>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat">
+              <h3>1.5+ Years</h3>
+              <span>Industry Experience</span>
+            </div>
+            <div class="stat">
+              <h3>Full Stack</h3>
+              <span>Frontend • Backend • DB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGE (ROOT PATH FIXED) -->
+        <div class="hero-image">
+          <img src="Sidharth AG_page-0001.jpg" alt="Sidharth Mitra">
+        </div>
+
       </div>
-
-      <div class="hero-stats">
-        <div class="stat">
-          <h3>10+</h3>
-          <span>Projects Built</span>
-        </div>
-        <div class="stat">
-          <h3>1.5+ Years</h3>
-          <span>Industry Experience</span>
-        </div>
-        <div class="stat">
-          <h3>Full Stack</h3>
-          <span>Frontend • Backend • DB</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- RIGHT: IMAGE -->
-    <div class="hero-image">
-      <img src="images/profile.png" alt="Sid - Full Stack Developer">
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- ================= ABOUT ================= -->
     <section id="about">
       <h2>About Me</h2>
-
       <p>
         I’m a Full Stack Web Developer with experience across startups and
         enterprise environments. I enjoy solving real-world problems using
         technology and building applications that are reliable, scalable,
         and easy to maintain.
       </p>
-
       <p>
         I work comfortably across the entire development lifecycle — from
         requirement analysis and UI design to backend development, database
@@ -99,222 +95,93 @@
     <!-- ================= SKILLS ================= -->
     <section id="skills">
       <h2>Technical Skills</h2>
-
       <div class="service-list">
-
         <div class="service">
-          <h3>Frontend Development</h3>
-          <p>
-            HTML5, Tailwind CSS, JavaScript, React.js — building responsive,
-            accessible, and modern user interfaces.
-          </p>
+          <h3>Frontend</h3>
+          <p>HTML5, Tailwind CSS, JavaScript, React.js</p>
         </div>
-
         <div class="service">
-          <h3>Backend Development</h3>
-          <p>
-            Node.js, Express.js — creating secure REST APIs, handling business
-            logic, and server-side integrations.
-          </p>
+          <h3>Backend</h3>
+          <p>Node.js, Express.js</p>
         </div>
-
         <div class="service">
           <h3>Database & Tools</h3>
-          <p>
-            MySQL, Microsoft SQL Server, Postman — designing schemas, writing
-            optimized queries, and testing APIs.
-          </p>
+          <p>MySQL, Microsoft SQL Server, Postman</p>
         </div>
-
         <div class="service">
           <h3>Programming</h3>
-          <p>
-            JavaScript, Python, C, C++ — strong fundamentals and problem-solving
-            mindset.
-          </p>
+          <p>JavaScript, Python, C, C++</p>
         </div>
-
       </div>
     </section>
 
     <!-- ================= EDUCATION ================= -->
-<section id="education">
-  <h2>Education</h2>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>B.Tech</h3>
+          <p>APIIT SD INDIA, Panipat<br>Kurukshetra University</p>
+        </div>
+        <div class="service">
+          <h3>Senior Secondary</h3>
+          <p>DAV Public School</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="service-list">
-
-    <div class="service">
-      <h3>Bachelor of Technology (B.Tech)</h3>
-      <p>
-        <strong>Institution:</strong> APIIT SD INDIA, PANIPAT.<br>
-        <strong>University:</strong> Kurukshetra University, Kurukshetra<br><br>
-        Pursuing/Completed a comprehensive engineering curriculum with a strong
-        focus on computer science fundamentals, programming, and software
-        development practices.
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>Senior Secondary Education</h3>
-      <p>
-        <strong>School:</strong> DAV Public School<br><br>
-        Completed senior secondary education with emphasis on analytical
-        thinking, problem solving, and foundational technical subjects.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications">
-  <h2>Certifications & Assets</h2>
-
-  <div class="cert-grid">
-
-    <!-- CodeQuotient -->
-    <div class="cert-card">
-      <img src="assets/certificates/codequotient.png" alt="CodeQuotient Internship Certificate">
-      <h3>Software Development Internship</h3>
-      <p>CodeQuotient</p>
-      <a href="assets/certificates/codequotient.pdf" target="_blank">
-        View Certificate
-      </a>
-    </div>
-
-    <!-- CNH Industrial -->
-    <div class="cert-card">
-      <img src="Sidharth AG_page-0001.jpg" alt="CNH Industrial Internship Certificate">
-      <h3>Industrial Internship</h3>
-      <p>CNH Industrial</p>
-      <a href="assets/certificates/cnh.pdf" target="_blank">
-        View Certificate
-      </a>
-    </div>
-
-    <!-- Sheryians -->
-    <div class="cert-card">
-      <img src="assets/certificates/sheryians.png" alt="Sheryians Coding School Certificate">
-      <h3>Full Stack Web Development / DSA in JavaScript</h3>
-      <p>Sheryians Coding School</p>
-      <a href="assets/certificates/sheryians.pdf" target="_blank">
-        View Certificate
-      </a>
-    </div>
-
-  </div>
-</section>
-
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>CodeQuotient Internship</h3>
+          <a href="Industrial Training Certificate - Sidharth Mitra.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="service">
+          <h3>CNH Industrial</h3>
+          <a href="6891b18d6425877b62c32a70_page-0001.jpg" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </section>
 
     <!-- ================= EXPERIENCE ================= -->
     <section id="experience">
       <h2>Experience</h2>
-
       <div class="service-list">
-
         <div class="service">
           <h3>QSD Formulations</h3>
-          <p>
-            <strong>Role:</strong> Software / Web Development Experience<br>
-            <strong>Duration:</strong> 1 Year<br><br>
-            Worked on application development, internal tools, and handling
-            real-world software requirements with a professional workflow.
-          </p>
+          <p>1 Year – Software/Web Development</p>
         </div>
-
         <div class="service">
           <h3>CNH Industrial</h3>
-          <p>
-            <strong>Role:</strong> Intern<br>
-            <strong>Duration:</strong> 6 Months<br><br>
-            Gained enterprise-level exposure, worked with structured processes,
-            and collaborated within professional teams.
-          </p>
+          <p>6 Months – Internship</p>
         </div>
-
         <div class="service">
           <h3>CodeQuotient</h3>
-          <p>
-            <strong>Role:</strong> Intern<br>
-            <strong>Duration:</strong> 45 Days<br><br>
-            Strengthened core programming concepts and hands-on development
-            through structured training.
-          </p>
+          <p>45 Days – Internship</p>
         </div>
-
-      </div>
-    </section>
-
-    <!-- ================= FEATURES ================= -->
-    <section id="features">
-      <h2>Why Hire Me</h2>
-
-      <div class="feature-list">
-
-        <div class="feature">
-          <h3>🚀 Real-World Experience</h3>
-          <p>
-            Experience across internships and professional roles with
-            production-level responsibility.
-          </p>
-        </div>
-
-        <div class="feature">
-          <h3>🧠 Strong Problem Solving</h3>
-          <p>
-            Comfortable debugging issues across frontend, backend, and databases.
-          </p>
-        </div>
-
-        <div class="feature">
-          <h3>⚙️ Deployment Mindset</h3>
-          <p>
-            Understanding of deployment, environments, and maintaining live
-            applications.
-          </p>
-        </div>
-
-        <div class="feature">
-          <h3>🤝 Team Leadership</h3>
-          <p>
-            Good communication skills, ownership mindset, and ability to work
-            effectively in teams.
-          </p>
-        </div>
-
       </div>
     </section>
 
     <!-- ================= CONTACT ================= -->
     <section id="contact">
       <h2>Contact Me</h2>
-        <p>
-        Open to full-time roles, internships, and freelance opportunities.
-        Let’s build something impactful together.
-        </p>
-
       <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" required></textarea>
-
-        <button type="submit">Send Message</button>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
       </form>
     </section>
 
   </main>
 
-  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>© 2026 Sid — Full Stack Web Developer</p>
+    <p>© 2026 Sidharth Mitra</p>
   </footer>
 
-  <!-- JS -->
+  <!-- JS (PATH FIXED) -->
   <script src="script.js"></script>
 
 </body>
