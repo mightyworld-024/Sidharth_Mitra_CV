@@ -1,9 +1,22 @@
 /* =========================
+   MOBILE NAV TOGGLE
+========================= */
+const menuToggle = document.getElementById("menuToggle");
+const navLinksContainer = document.getElementById("navLinks");
+
+if (menuToggle && navLinksContainer) {
+  menuToggle.addEventListener("click", () => {
+    navLinksContainer.classList.toggle("active");
+  });
+}
+
+/* =========================
    SMOOTH SCROLL FOR NAV
 ========================= */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
+
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       target.scrollIntoView({
@@ -11,6 +24,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         block: "start"
       });
     }
+
+    /* close dropdown on mobile click */
+    navLinksContainer.classList.remove("active");
   });
 });
 
@@ -18,14 +34,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    ACTIVE NAV LINK ON SCROLL
 ========================= */
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("header nav ul li a");
+const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 150;
-    if (pageYOffset >= sectionTop) {
+    const sectionTop = section.offsetTop - 180;
+    if (window.pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
@@ -44,11 +60,10 @@ window.addEventListener("scroll", () => {
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.style.boxShadow = "0 8px 30px rgba(0,0,0,0.4)";
-  } else {
-    header.style.boxShadow = "none";
-  }
+  header.style.boxShadow =
+    window.scrollY > 50
+      ? "0 8px 30px rgba(0,0,0,0.4)"
+      : "none";
 });
 
 /* =========================
@@ -63,8 +78,7 @@ const revealOnScroll = () => {
 
   revealElements.forEach(el => {
     const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
+    if (elementTop < windowHeight - 120) {
       el.classList.add("reveal");
     }
   });
@@ -103,8 +117,10 @@ if (form) {
 
     setTimeout(() => {
       button.innerText = "Message Sent ✓";
-      button.style.background = "linear-gradient(90deg, #00f5d4, #6c63ff)";
+      button.style.background =
+        "linear-gradient(90deg, #00f5d4, #6c63ff)";
       form.reset();
+      button.disabled = false;
     }, 1500);
   });
 }
